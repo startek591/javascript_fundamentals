@@ -26,4 +26,25 @@
   let job2 = 'teacher';
 
   console.log(myFirstJob);
+
+  // Data Types
+  let javascriptFun = true;
+  console.log(javascriptFun);
+
+  console.log(typeof true);
+  console.log(typeof javascriptFun);
+  console.log(typeof 23);
+  console.log(typeof 'Jonas');
+
+  javascriptFun = 'YES';
+  console.log(typeof javascriptFun);
+
+  let year;
+  console.log(year);
+  console.log(typeof year);
+
+  year = 1991;
+  console.log(typeof year);
+
+  console.log(typeof null);
 })();
