@@ -72,4 +72,27 @@
   const firstName2 = 'Jonas';
   const lastName2 = 'Schmedtmann';
   console.log(firstName2 + ' ' + lastName2);
+
+  // Assignment operators
+  let x = 10 + 5; // 15
+  x += 10; // x = x + 10 = 25
+  x *= 4; // x = x * 4 = 100
+  x++; // x = x + 1
+  x--;
+  x--;
+  console.log(x);
+
+  // Comparison operators
+  console.log(ageJonas > ageSarah); // >, <, >=, <=
+  console.log(ageSarah >= 18);
+
+  const isFullAge = ageSarah >= 18;
+  console.log(now - 1991 > now - 2018);
+
+  let x2, y2;
+  x2 = y2 = 25 - 10 - 5; // x = y = 10, x = 10
+  console.log(x2, y2);
+
+  const averageAge = (ageJonas + ageSarah) / 2;
+  console.log(ageJonas, ageSarah, averageAge);
 })();
