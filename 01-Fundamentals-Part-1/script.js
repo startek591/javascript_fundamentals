@@ -266,4 +266,22 @@
 
   const me = 'Jonas';
   console.log(`I'm, ${2037 - 1991} years old ${me}`);
+
+  // The Conditional (Ternary) Operator
+  const age4 = 23;
+
+  const drink = age4 >= 18 ? 'wine 🍷' : 'water 💧';
+  console.log(drink);
+
+  let drink2;
+  if (age4 >= 18) {
+    drink2 = 'wine 🍷';
+  } else {
+    drink2 = 'water 💧';
+  }
+  console.log(drink2);
+
+  console.log(
+    `I like to drink ${age4 >= 18 ? 'wine 🍷' : 'water 💧'}`
+  );
 })();
