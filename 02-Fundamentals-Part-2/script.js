@@ -222,3 +222,35 @@ if (jonas3[interestedIn]) {
 jonas3.location = 'Portugal';
 jonas3['twitter'] = '@jonasschmedtmann';
 console.log(jonas3);
+
+// Object Methods
+const jonas4 = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYear: 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+  calcAge1: function (birthYear) {
+    return 2037 - birthYear;
+  },
+  calcAge2: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
+  calcAge3: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge1()}-year old ${
+      jonas4.job
+    }, and he has ${
+      this.hasDriversLicense ? 'a' : 'no'
+    } driver's license.`;
+  },
+};
+
+console.log(jonas4.calcAge1());
+console.log(jonas4.age);
+console.log(jonas4.age);
