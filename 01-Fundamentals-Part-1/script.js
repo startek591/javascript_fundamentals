@@ -215,4 +215,18 @@
   }
 
   if (favourite !== 23) console.log('Why not 23?');
+
+  // Logical Operators
+  const hasDriversLicense = true; // A
+  const hasGoodVision = true; // B
+
+  console.log(hasDriversLicense && hasGoodVision);
+  console.log(hasDriversLicense || hasGoodVision);
+  console.log(!hasDriversLicense);
+
+  if (hasDriversLicense && hasGoodVision) {
+    console.log('Sarah is able to drive!');
+  } else {
+    console.log('Someone else should drive...');
+  }
 })();
