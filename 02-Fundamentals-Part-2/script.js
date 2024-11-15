@@ -95,3 +95,50 @@ const yearsUntilRetirement2 = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement2(1991, 'Jonas'));
 console.log(yearsUntilRetirement2(1950, 'Mike'));
+
+// Introduction to Arrays
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+
+const firstName = 'Jonas';
+const jonas = [
+  firstName,
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  friends,
+];
+console.log(jonas);
+console.log(jonas.length);
+
+const calcAge5 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age5 = calcAge5(years[0]);
+const age6 = calcAge5(years[1]);
+const age7 = calcAge5(years[years.length - 1]);
+console.log(age5, age6, age7);
+
+const ages = [
+  calcAge5(years[0]),
+  calcAge5(years[1]),
+  calcAge5(years[years.length - 1]),
+];
+console.log(ages);
