@@ -91,3 +91,17 @@ const capitalizeName = function (name) {
 
 capitalizeName('jessica ann smith davis');
 capitalizeName('jonas schmedtmann');
+
+// Padding
+const message = 'Go to gate 23!';
+console.log(message.padStart(20, '+').padEnd(30, '+'));
+
+const mackCreditCard = function (number) {
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length, '*');
+};
+
+console.log(mackCreditCard(64637836));
+console.log(mackCreditCard(43378463864647384));
+console.log(mackCreditCard('334859493847755774747'));
