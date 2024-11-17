@@ -105,3 +105,14 @@ const mackCreditCard = function (number) {
 console.log(mackCreditCard(64637836));
 console.log(mackCreditCard(43378463864647384));
 console.log(mackCreditCard('334859493847755774747'));
+
+// Repeat
+const message2 = 'Bad weather... All Departures Delayed...';
+console.log(message2.repeat(5));
+
+const planesInLine = function (n) {
+  console.log(`There are ${n} planes in line ${'🛩️'.repeat(n)}`);
+};
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
