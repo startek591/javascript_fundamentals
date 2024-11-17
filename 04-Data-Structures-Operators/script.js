@@ -248,3 +248,35 @@ rest.set(document.querySelector('h1'), 'Heading');
 console.log(rest);
 console.log(rest.size);
 console.log(rest.get(arr));
+
+// Sets
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+
+const staff = [
+  'Waiter',
+  'Chef',
+  'Waiter',
+  'Manager',
+  'Chef',
+  'Waiter',
+];
+const staffUnique = [...new Set(staff)];
+
+console.log(staffUnique);
+
+console.log(
+  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'])
+    .size
+);
+
+console.log(new Set('jonnasschmedtmann').size);
