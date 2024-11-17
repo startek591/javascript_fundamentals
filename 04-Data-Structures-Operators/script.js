@@ -159,3 +159,40 @@ console.log(plane.startsWith('Airb'));
 if (plane.startsWith('Airbus') && plane.endsWith('neo')) {
   console.log('Part of the NEW Airbus family');
 }
+
+// Working With Strings - Part 3
+const airline2 = 'TAP Air Portugal';
+const plane3 = 'A320';
+
+console.log(plane3[0]);
+console.log(plane3[1]);
+console.log(plane3[2]);
+console.log('B737'[0]);
+
+console.log(airline2.length);
+console.log(airline2.lastIndexOf('r'));
+console.log(airline2.indexOf('portugal'));
+
+console.log(airline2.slice(4));
+console.log(airline2.slice(4, 7));
+
+console.log(airline2.slice(0, airline2.indexOf(' ')));
+console.log(airline2.slice(airline2.lastIndexOf(' ') + 1));
+
+console.log(airline2.slice(-2));
+console.log(airline2.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E')
+    console.log('You got the middle seat 😀');
+  else console.log('You got lucky 😎');
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+
+console.log(new String('jonas'));
+console.log(typeof new String('jonas').slice(1));
