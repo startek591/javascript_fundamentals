@@ -196,3 +196,18 @@ checkMiddleSeat('3E');
 
 console.log(new String('jonas'));
 console.log(typeof new String('jonas').slice(1));
+
+// Maps: Iteration
+const question = new Map([
+  [
+    'question',
+    'Waht is the best programming language is the worlds?',
+  ],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct 🎉'],
+  [false, 'Try again!'],
+]);
+console.log(question);
